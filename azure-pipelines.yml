@@ -230,9 +230,6 @@ jobs:
     displayName: Move daemons from RelWithDebInfo to bin/ or libs/
 
   - bash: |
-      echo "$(Build.ArtifactStagingDirectory)"/$(System.TeamProject)-daemons-$(Build.SourceBranchName)-$(TagName)-win$(arch).zip
-      dir
-      dir ./armor/
       7z a "$(Build.ArtifactStagingDirectory)"/$(System.TeamProject)-daemons-$(Build.SourceBranchName)-$(TagName)-win$(arch).zip \
         ./armor/bin/armord.exe \
         ./armor/bin/armord.pdb \
