@@ -231,12 +231,12 @@ jobs:
 
   - bash: |
       7z a "$(Build.ArtifactStagingDirectory)"/$(System.TeamProject)-daemons-$(Build.SourceBranchName)-$(TagName)-win$(arch).zip \
-        armor/bin/armord.exe \
-        armor/bin/armord.pdb \
-        armor/bin/minerd.exe \
-        armor/bin/minerd.pdb \
-        armor/bin/walletd.exe \
-        armor/bin/walletd.pdb
+        ./armor/bin/armord.exe \
+        ./armor/bin/armord.pdb \
+        ./armor/bin/minerd.exe \
+        ./armor/bin/minerd.pdb \
+        ./armor/bin/walletd.exe \
+        ./armor/bin/walletd.pdb
     displayName: Zip daemons
 
   - bash: |
