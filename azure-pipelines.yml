@@ -59,7 +59,7 @@ jobs:
     displayName: Fetch boost
 
   - script: |
-      git clone --single-branch --depth 1 https://github.com/networkdev/lmdb.git
+      git clone --single-branch --depth 1 https://github.com/BenjaminJJ/lmdb.git
     displayName: Clone LMDB
 
   - script: |
